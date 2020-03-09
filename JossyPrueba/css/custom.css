@@ -1,0 +1,346 @@
+@charset "UTF-8";
+/*--------------------------
+  tipografia y variables sas
+-----------------------------*/
+@font-face {
+  font-family: bebas;
+  src: url(../fuentes/BebasNeue Regular.otf);
+}
+@font-face {
+  font-family: PTN;
+  src: url(../fuentes/PTSans 2.ttc);
+}
+
+p, li, a{
+  font-family: 'Bebas', sans-serif; }
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'PTN', sans-serif; }
+
+html {
+  font-size: 16px; }
+
+
+:root{
+	--cafe: #3a1a03;
+	--cafe-claro: #b25d31;
+	--amarillo-claro: #eca43d;
+	--amarillo-menos-claro:#e99b36;
+	--fondo-gris-claro:#f9fafb;
+}
+
+
+/*==== fuente =====*/
+
+/*--------------------------   
+          menu  
+--------------------------*/
+
+.logo{
+	position: absolute;
+    width: 250px;
+    top: 0;
+}
+.fondo{
+	background-color: var(--cafe);
+}
+.navbar{
+	padding: .3rem 1rem;
+}
+.menu li.nav-item a.nav-link{
+	color: #fff;
+}
+
+/*--------------------------   
+    banner principal  
+--------------------------*/
+.principal{
+	height: 100vh;
+	background-image: url(../imagenes/recortes/Remanso-06.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed ;
+}
+
+.img-principal{
+	margin: 0;
+}
+.font-bono{
+	color: var(--cafe);
+	text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 23px;
+}
+
+.form-bono{
+	position: absolute;
+    width: 100%;
+    top: 20%;
+    padding: 4px 35px;
+}
+.form-bono .form-group {
+    margin-bottom: .5rem;
+}
+.form-bono .btn-bono{
+	background-color: var(--cafe);
+	color: #fff;
+}
+.form-bono .form-control{
+	height: calc(2.25rem + -5px);
+}
+.bono{
+	position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 30%;
+}
+.img-bono{
+	margin: 0;
+}
+.fondo-bono{
+	background-color: var(--cafe-claro);
+	border-radius: 0px 0px 53px 0px;
+}
+.form-bono .terminos{
+	font-size: .8rem;
+}
+
+/*--------------------------   
+        Proyecto
+--------------------------*/
+.proyecto{
+	background-color: #f9fafb;
+}
+.lista .nav-item .nav-link{
+	padding: 0;
+	font-style: italic;
+	font-size: 1rem;
+	color: #212529;
+}
+.cercano{
+	font-size: 1rem;
+	font-weight: bold;
+}
+.titulo-proyecto, .titulo-zonas-comunes, .titulo-mapa, .titulo-grupo, .titulo-sala{
+	background-color: #e9ecef;
+	color: var(--cafe);
+	padding: .5rem 2.5rem;
+    border-radius: 15px 0px 15px 0px;
+    width: 45%;
+}
+.con-proyecto{
+	padding: 1rem 4.5rem;
+}
+.parrafo-proyecto, .parrafo-proyecto2{
+    font-size: 1rem;
+}
+.proyectos{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*--------------------------   
+        Zonas Comunes
+--------------------------*/
+.zonas-comunes, .mapa{
+	background-color: var(--fondo-gris-claro);
+}
+.titulo-zonas-comunes, .titulo-formulario-contacto, .titulo-mapa, .titulo-grupo, .titulo-sala{
+    width: 100%;
+    padding: 0.5rem 2rem;
+    margin-bottom: 2rem;
+}
+.texto-zonas-comunes, .texto-mapa{
+	font-style: italic;
+	font-size: 1.3rem;
+	color: #212529;
+}
+/*--------------------------   
+        subsidio
+--------------------------*/
+
+/*--------------------------   
+        Formulario 
+--------------------------*/
+.formulario-contacto{
+	background-image: url(../imagenes/recortes/Remanso-27.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.titulo-formulario-contacto{
+	color: var(--cafe);
+    background-color: #bd521c;
+    border-radius: 15px 0px 15px 0px;
+}
+.texto-formulario-contacto{
+	font-style: italic;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.formulario .btn-formulario{
+	background-color: var(--cafe);
+	color: #fff;
+}
+
+/*--------------------------   
+        Grupo-profesional
+--------------------------*/
+
+/*--------------------------   
+        Sala de negocios
+--------------------------*/
+.titulo-sala{
+	background-color: transparent;
+}
+.sala{
+	background-image: url(../imagenes/recortes/Remanso-36.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.texto-sala{
+	font-size: .8rem;
+	color: var(--cafe) !important;
+}
+.info-sala{
+	word-break: break-word;
+	margin-bottom: 0px
+	color: var(--cafe) !important;
+}
+/*--------------------------   
+        Modal 
+--------------------------*/
+.titulo-modal{
+	color: var(--cafe);
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 23px;
+}
+.modal-content{
+	background-color: #f8f9fa;
+}
+.form-modal .form-group {
+    margin-bottom: .3rem;
+}
+.modal-terminos{
+	font-size: 1rem;
+	color: var(--cafe);
+}
+.btn-modal, .btn-form-modal{
+	background-color: var(--cafe);
+	color: #fff;
+}
+@media (min-width: 576px){
+	.modal-dialog {
+    	margin: 14rem auto;
+	}
+}
+/*--------------------------   
+        Media queris  
+--------------------------*/
+/* celulares pequeños COL*/
+@media (max-width: 575px) {
+	/*==== menu =====*/
+	.logo {
+    	width: 180px;
+	}
+	.form-bono{
+		top: 36px;
+    	padding: 4px 10px;
+	}
+	.form-bono .form-control {
+    	height: calc(2.25rem + -10px);
+    	font-size: .7rem;
+	}
+	.menu{
+	    margin-top: 3rem;
+	}
+	
+
+	/*==== banner principal =====*/
+	.principal{
+		background-position: -450px 0%;
+	}
+	/*==== proyecto =====*/
+	.con-proyecto {
+    	padding: 1rem 1.5rem;
+	}
+	.titulo-proyecto{
+		width: 100%;
+		text-align: center;
+	}
+	
+	
+	/*==== zonas comunes =====*/
+	.titulo-zonas-comunes, 
+	.titulo-formulario-contacto, 
+	.titulo-mapa, 
+	.titulo-grupo, 
+	.titulo-sala{
+    	font-size: 2rem;
+    	margin-bottom: 1rem;
+	}
+	.texto-zonas-comunes, .texto-mapa{
+		font-size: 1rem;
+	}
+	/*==== formulario de contacto =====*/
+	.texto-formulario-contacto{
+		font-size: 1rem;
+	}
+	.formulario-contacto{
+	    background-position: -222px 50%;
+	}
+	/*==== sala =====*/
+	.info-sala{
+		font-size: .8rem;
+	}
+	.texto-sala{
+		font-size: .7rem;
+	}
+
+}
+
+/* celulares grandes y tables hasta 576px SM*/
+@media (min-width: 576px) and (max-width: 767px) {
+	.menu{
+	    margin-top: 5rem;
+	}
+	.formulario-contacto{
+	    background-position: -222px 50%;
+	}
+}
+
+/* tables desde 768px hasta 991px MD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	.bono {
+    	top: 25%;
+	}
+	.btn-modal{
+		font-size: 1.2rem;
+	}
+	.btn-form-modal{
+		font-size: 1.2rem;
+	}
+	.menu{
+	    margin-top: 5rem;
+	}
+}
+
+/* tables y computadores pequeños desde 992px hasta 1199px LG*/
+@media (min-width: 992px) and (max-width: 1200px) {
+	.btn-modal{
+		font-size: 1.2rem;
+	}
+	.btn-form-modal{
+		font-size: 1.2rem;
+	}
+	.modal-dialog {
+    	margin: 3rem auto;
+	}
+	
+}
+
+/* computadores y pantallas grandes*/
+@media (min-width: 1201px) and (max-width: 1500px) {}
